@@ -1,0 +1,98 @@
+{
+  "schema_version": "coaching_evidence_v1",
+  "version": "coach-evidence-2026-08-03",
+  "title": "训记训练规划与微调科学决策基线",
+  "references": [
+    {
+      "id": "who-adult-activity-2020",
+      "title": "WHO Guidelines on physical activity and sedentary behaviour",
+      "url": "https://www.who.int/publications/i/item/9789240014886",
+      "principles": [
+        "成年人长期目标可参考每周 150–300 分钟中等强度或 75–150 分钟高强度有氧。",
+        "每周至少 2 天训练主要肌群。",
+        "按用户当前水平递进，不把建议上限直接作为第一周处方。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment"]
+    },
+    {
+      "id": "acsm-resistance-training-2026",
+      "title": "ACSM Resistance Training Guidelines Update (2026)",
+      "url": "https://acsm.org/resistance-training-guidelines-update-2026/",
+      "principles": [
+        "规律性和个体化优先于不必要的复杂计划。",
+        "器械种类、每组力竭和复杂周期化并非对所有人普遍必要。",
+        "优先选择用户可持续、可稳定完成并能渐进的动作和训练量。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment"]
+    },
+    {
+      "id": "acsm-excess-body-weight-2024",
+      "title": "Physical Activity for Health and Fitness in the Presence of Excess Body Weight",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39277776/",
+      "principles": [
+        "体重管理应组合日常活动、有氧和抗阻训练。",
+        "不把 HIIT 视为普遍优于其他活动形式的减重手段。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment"]
+    },
+    {
+      "id": "resistance-exercise-dietary-weight-loss-2025",
+      "title": "Resistance exercise during dietary weight loss: systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40909191/",
+      "principles": [
+        "饮食减重期间加入抗阻训练有助于减少瘦体重流失并改善力量。",
+        "减脂计划不应只安排有氧。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment"]
+    },
+    {
+      "id": "aasm-adult-sleep-duration",
+      "title": "AASM Adult Sleep Duration Health Advisory",
+      "url": "https://aasm.org/advocacy/position-statements/adult-sleep-duration-health-advisory/",
+      "principles": [
+        "成年人应规律获得至少 7 小时睡眠。",
+        "单晚睡眠不足只作为一条恢复信号，并与疲劳、静息心率、HRV、症状和近期负荷共同判断。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment", "daily_adjustment"]
+    },
+    {
+      "id": "hrv-guided-training-review-2021",
+      "title": "HRV-guided training systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34639599/",
+      "principles": [
+        "HRV 引导训练的方法和阈值并不统一。",
+        "只相对同一用户、同一设备和相近条件的个人基线解释。",
+        "不使用通用绝对阈值，也不凭一次读数决定停训。"
+      ],
+      "applies_to": ["weekly_adjustment", "daily_adjustment"]
+    },
+    {
+      "id": "aha-blood-pressure-readings",
+      "title": "American Heart Association: Understanding Blood Pressure Readings",
+      "url": "https://www.heart.org/en/health-topics/high-blood-pressure/blood-pressure-explained",
+      "principles": [
+        "血压高于 180/120 mmHg 时至少间隔 1 分钟复测。",
+        "若仍高且伴胸痛、气短、背痛、麻木、无力、视力变化或说话困难，停止训练建议并立即寻求急救。",
+        "训练教练不对异常血压作诊断。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment", "daily_adjustment"]
+    },
+    {
+      "id": "cdc-steps-for-losing-weight",
+      "title": "CDC Steps for Losing Weight",
+      "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+      "principles": [
+        "采用可持续、渐进的减重节奏。",
+        "观察至少 7 天体重趋势，不根据单日体重修改计划。"
+      ],
+      "applies_to": ["training_planner", "weekly_adjustment", "daily_adjustment"]
+    }
+  ],
+  "decision_rules": [
+    "默认恢复基线窗口为最近 28 天，每日决策同时查看最近 48 小时变化。",
+    "数据不足 14 天、来源或设备变化、记录明显缺失时降低置信度并说明。",
+    "正常、降量或休息使用多信号判断，单一异常不自动触发改计划。",
+    "周计划每次优先只改变一个主要变量。",
+    "缺少关键输入时保留原计划、给出低风险替代或请求补充，不能伪造数据。"
+  ]
+}

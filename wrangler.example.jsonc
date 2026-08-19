@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "xunji-cloud-coach",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-08-02",
+  "workers_dev": true,
+  "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "<your-kv-namespace-id>"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "COACH_DB",
+      "database_name": "xunji-coach",
+      "database_id": "<your-d1-database-id>",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Optional: remove this block unless the user explicitly enables R2 archival.
+  "r2_buckets": [
+    {
+      "binding": "COACH_ARCHIVE",
+      "bucket_name": "xunji-coach-archive"
+    }
+  ],
+  "observability": { "enabled": false }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "训记云教练"
+  short_description: "依据已确认的整体计划进行每周微调和每日训练决策"
+  default_prompt: "在已从“训记云教练”App 打开的会话中，使用 $xunji-cloud-coach 帮我调整下周训练或判断今天怎么练。"

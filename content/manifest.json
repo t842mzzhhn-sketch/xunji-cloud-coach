@@ -1,0 +1,31 @@
+{
+  "schema_version": "xunji_content_manifest_v1",
+  "packs": [
+    {
+      "key": "training_planner",
+      "version": "training-planner-2026-08-04.3",
+      "markdown": "workflows/training-planner.md"
+    },
+    {
+      "key": "weekly_adjustment",
+      "version": "cloud-coach-weekly-2026-08-04.1",
+      "markdown": "workflows/cloud-coach-weekly.md"
+    },
+    {
+      "key": "daily_adjustment",
+      "version": "cloud-coach-daily-2026-08-04",
+      "markdown": "workflows/cloud-coach-daily.md"
+    },
+    {
+      "key": "user_preferences",
+      "version": "user-preferences-template-2026-08-04",
+      "markdown": "preferences/user-preferences-template.md"
+    },
+    {
+      "key": "evidence",
+      "version": "coach-evidence-2026-08-03",
+      "markdown": "evidence/coach-evidence-2026-08-03.md",
+      "json": "evidence/coach-evidence-2026-08-03.json"
+    }
+  ]
+}

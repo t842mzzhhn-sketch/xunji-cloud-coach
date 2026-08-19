@@ -1,0 +1,4 @@
+interface:
+  display_name: "训记训练规划师"
+  short_description: "根据云端健康、训记记录和医学证据制定一至两个月训练计划"
+  default_prompt: "在已从“训记云教练”App 打开的会话中，使用 $xunji-training-planner 制定整体计划；分别确认总纲保存与私人 Google Docs 派生摘要授权，并继续生成第一周草案。"

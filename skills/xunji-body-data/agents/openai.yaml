@@ -1,0 +1,4 @@
+interface:
+  display_name: "训记身体数据"
+  short_description: "读取、比较、总结并在确认后写入训记体重、体脂和身体围度数据"
+  default_prompt: "Use $xunji-body-data to read and summarize my requested Xunji body records."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "训记饮食数据"
+  short_description: "搜索、读取、整理并在确认后写回训记饮食、食物和模板数据"
+  default_prompt: "Use $xunji-food-data to read and summarize my requested Xunji food records."

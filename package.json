@@ -1,0 +1,17 @@
+{
+  "name": "xunji-cloud-coach",
+  "version": "1.5.1",
+  "description": "Self-hosted Xunji skills and Cloudflare MCP server for confirmation-first fitness coaching workflows",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "content:check": "node scripts/publish-content.mjs --check",
+    "content:publish": "node scripts/publish-content.mjs --remote",
+    "check": "node --check src/worker.mjs && node --check src/cloud-state.mjs && npm run content:check && python3 scripts/check_repo.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "训记训练数据"
+  short_description: "读取、整理、导出并在确认后写回训记训练记录与官方训练计划"
+  default_prompt: "Use $xunji-training-data to read and summarize my requested Xunji training records."
